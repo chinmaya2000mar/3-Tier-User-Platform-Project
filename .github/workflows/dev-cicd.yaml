@@ -7,7 +7,7 @@ on:
     paths:
       - client/**
       - server/**
-      - .github/workflows/dev-cicd.yml
+      - .github/workflows/dev-cicd.yaml
 
 permissions:
   contents: write
