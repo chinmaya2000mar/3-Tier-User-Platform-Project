@@ -214,7 +214,7 @@ jobs:
           name: server-trivy-fs-table-report
           path: server-trivy-fs-report.txt
           if-no-files-found: warn
-client-lint:
+  client-lint:
     name: Client Lint
     runs-on: ubuntu-latest
     needs:
@@ -244,7 +244,7 @@ client-lint:
       - name: Run client lint
         run: npm run lint --if-present
         continue-on-error: true
-server-lint:
+  server-lint:
     name: Server Lint
     runs-on: ubuntu-latest
     needs:
